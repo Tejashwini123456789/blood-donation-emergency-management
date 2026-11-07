@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Edit Donor</title>
+</head>
+
+<body>
+
+<h1>Edit Donor Details</h1>
+
+<form action="/update/{{ donor[0] }}" method="POST">
+
+Name:
+<input type="text" name="name" value="{{ donor[1] }}"><br><br>
+
+Age:
+<input type="number" name="age" value="{{ donor[2] }}"><br><br>
+
+Gender:
+<select name="gender">
+<option>{{ donor[3] }}</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+<br><br>
+
+Blood Group:
+<select name="blood_group">
+<option>{{ donor[4] }}</option>
+<option>A+</option>
+<option>B+</option>
+<option>O+</option>
+<option>AB+</option>
+</select>
+<br><br>
+
+Phone:
+<input type="text" name="phone" value="{{ donor[5] }}"><br><br>
+
+City:
+<input type="text" name="city" value="{{ donor[6] }}"><br><br>
+
+<button type="submit">Update</button>
+
+</form>
+
+</body>
+
+</html>

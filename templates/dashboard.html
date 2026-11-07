@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Dashboard</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d32f2f;
+            margin-top: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            width: 220px;
+            background: white;
+            margin: 20px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color: #d32f2f;
+        }
+
+        .card p {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px;
+            background: #d32f2f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>📊 Admin Dashboard</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>👥 Total Donors</h2>
+            <p>{{ total_donors }}</p>
+        </div>
+
+        <div class="card">
+            <h2>🚑 Requests</h2>
+            <p>{{ total_requests }}</p>
+        </div>
+
+        <div class="card">
+            <h2>🩸 Blood Groups</h2>
+            <p>{{ total_blood_groups }}</p>
+        </div>
+
+        <div class="card">
+            <h2>🏙️ Cities</h2>
+            <p>{{ total_cities }}</p>
+        </div>
+
+    </div>
+
+    <a href="/">
+        <button class="btn">Back to Home</button>
+    </a>
+
+</body>
+
+</html>
